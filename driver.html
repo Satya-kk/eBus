@@ -1,0 +1,34 @@
+<!-- driver.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Ebus — Driver</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Driver Dashboard</h1>
+    <div class="card">
+      <h3>Post Bus Info</h3>
+      <input id="bus-number" placeholder="Bus number (unique)"/>
+      <input id="route-from" placeholder="From (source)"/>
+      <input id="route-to" placeholder="To (destination)"/>
+      <input id="bus-type" placeholder="Bus type (AC/Non-AC)"/>
+      <input id="contact" placeholder="Contact number"/>
+      <button id="btn-post">Post Bus</button>
+    </div>
+
+    <div class="card">
+      <h3>Live Location</h3>
+      <p>Current: <span id="loc-display">Not started</span></p>
+      <button id="btn-start">Start Sharing Location</button>
+      <button id="btn-stop">Stop</button>
+    </div>
+
+    <button id="btn-logout">Logout</button>
+  </div>
+
+  <script type="module" src="js/driver.js"></script>
+</body>
+</html>

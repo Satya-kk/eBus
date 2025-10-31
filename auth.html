@@ -1,0 +1,32 @@
+<!-- auth.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Ebus — Auth</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="card small">
+    <h2>Sign Up</h2>
+    <input id="signup-name" placeholder="Full name"/>
+    <input id="signup-email" placeholder="Email"/>
+    <input id="signup-password" placeholder="Password" type="password"/>
+    <select id="signup-role">
+      <option value="user">User</option>
+      <option value="driver">Driver</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button id="btn-signup">Sign Up</button>
+  </div>
+
+  <div class="card small">
+    <h2>Login</h2>
+    <input id="login-email" placeholder="Email"/>
+    <input id="login-password" placeholder="Password" type="password"/>
+    <button id="btn-login">Login</button>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
